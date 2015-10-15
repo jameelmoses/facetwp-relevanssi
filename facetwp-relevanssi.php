@@ -3,7 +3,7 @@
 Plugin Name: FacetWP - Relevanssi integration
 Plugin URI: https://facetwp.com/
 Description: Use Relevanssi with search facets
-Version: 0.1
+Version: 0.2
 Author: Matt Gibbs
 
 Copyright 2015 Matt Gibbs
@@ -51,16 +51,16 @@ class FacetWP_Relevanssi
                 return 'continue';
             }
 
-            // TODO: get Relevanssi to return post IDs instead of entire post objects
-            $args = apply_filters( 'facetwp_relevanssi_search_args', array(
-                'q' => $selected_values,
-                // 'load_posts' => false,
-            ) );
+            $query = (object) array(
+                'query_vars' => array(
+                    's' => $selected_values
+                )
+            );
 
-            $results = relevanssi_search( $args );
+            relevanssi_do_query( $query );
 
             $matches = array();
-            foreach ( $results['hits'] as $result ) {
+            foreach ( $query->posts as $result ) {
                 $matches[] = $result->ID;
             }
 
