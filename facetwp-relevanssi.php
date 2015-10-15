@@ -5,6 +5,7 @@ Plugin URI: https://facetwp.com/
 Description: Use Relevanssi with search facets
 Version: 0.2
 Author: Matt Gibbs
+GitHub Plugin URI: https://github.com/FacetWP/facetwp-relevanssi
 
 Copyright 2015 Matt Gibbs
 
