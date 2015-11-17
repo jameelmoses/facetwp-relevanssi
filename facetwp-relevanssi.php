@@ -3,7 +3,7 @@
 Plugin Name: FacetWP - Relevanssi integration
 Plugin URI: https://facetwp.com/
 Description: Use Relevanssi with search facets
-Version: 0.2
+Version: 0.3
 Author: Matt Gibbs
 GitHub Plugin URI: https://github.com/FacetWP/facetwp-relevanssi
 
@@ -53,8 +53,11 @@ class FacetWP_Relevanssi
             }
 
             $query = (object) array(
+                'is_admin' => false,
                 'query_vars' => array(
-                    's' => $selected_values
+                    's' => $selected_values,
+                    'paged' => 1,
+                    'posts_per_page' => -1
                 )
             );
 
