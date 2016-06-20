@@ -10,8 +10,6 @@ GitHub URI: facetwp/facetwp-relevanssi
 
 defined( 'ABSPATH' ) or exit;
 
-include( dirname( __FILE__ ) . '/github-updater.php' );
-
 class FacetWP_Relevanssi
 {
     function __construct() {
