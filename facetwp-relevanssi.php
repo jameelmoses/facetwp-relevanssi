@@ -2,7 +2,7 @@
 /*
 Plugin Name: FacetWP - Relevanssi integration
 Description: Relevanssi integration for FacetWP
-Version: 0.5
+Version: 0.5.1
 Author: FacetWP, LLC
 Author URI: https://facetwp.com/
 GitHub URI: facetwp/facetwp-relevanssi
