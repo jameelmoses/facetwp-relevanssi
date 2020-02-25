@@ -1,0 +1,15 @@
+{
+  "name": "facetwp/facetwp-relevannsi",
+  "version": "0.5.2",
+  "description": "Advanced Filtering for WordPress",
+  "keywords": ["wordpress", "plugin"],
+  "homepage": "https://facetwp.com/add-ons/relevanssi/",
+  "authors": [{
+    "name": "FacetWP",
+    "homepage": "https://facetwp.com"
+  }],
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=5.6"
+  }
+}
